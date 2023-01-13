@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "name": "ryum_bot",
+            "type": "command",
+            "program": "D:/PyProject/ryumkabot/.fleet/run.bat",
+        }
+    ]
+}

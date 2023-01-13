@@ -1,0 +1,1 @@
+python D:/PyProject/ryumkabot/ryumkabot.py
