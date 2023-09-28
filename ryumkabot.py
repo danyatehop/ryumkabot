@@ -2,7 +2,6 @@ import datetime
 import menu
 import parser_cyt
 import parser_hum
-# import sponk
 import parser_toast
 import settings
 import telebot
@@ -92,33 +91,6 @@ def proc_buttons(message):
         bot.reply_to(message, "ЗА... ЕБИСЬ!!!")
         time.sleep(3)
         bot.reply_to(message, parser_toast.toast_pars())
-
-    # if message.text == "Отшлёпать бота по заднице ✋🍑":
-
-    #     markap_inline = types.InlineKeyboardMarkup()
-    #     sponk_button = types.InlineKeyboardButton("Шлёпнуть!!!", callback_data="ШЛЁП!!!")
-    #     markap_inline.add(sponk_button)
-    #     bot.send_message(message.chat.id, "Бот спустил штанишки", reply_markup=markap_inline)
-    #     bot.send_message(message.chat.id, sponk.sponk())
-
-
-# @bot.callback_query_handler(func=lambda call: call.data == "ШЛЁП!!!")
-# def pressed_more_button(call):
-
-#     res_list = sponk.resuls_sponks()
-
-#     markap_inline = types.InlineKeyboardMarkup()
-#     more_button = types.InlineKeyboardButton("Шлёпнуть ещё!!!", callback_data="ШЛЁП!!!")
-#     markap_inline.add(more_button)
-
-#     bot.send_photo(
-
-#         call.message.chat.id,
-#         photo=open(f".\images\{res_list[1]}.jpg", 'rb'),
-#         caption=res_list[0],
-#         reply_markup=markap_inline
-
-#         )
 
 
 bot.infinity_polling()

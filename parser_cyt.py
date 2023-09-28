@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as Bs
 import fake_useragent
 from random import randint
 import requests
@@ -15,7 +15,7 @@ headers = {
 def cyt_pars():
     html = requests.get(URL, headers=headers)
 
-    soup = bs(html.text, 'html.parser')
+    soup = Bs(html.text, 'html.parser')
     res = soup.find_all('div', class_='ads-color-box')
     index = randint(0, len(res))
 

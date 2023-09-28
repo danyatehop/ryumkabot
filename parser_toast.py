@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as Bs
 import fake_useragent
 import requests
 
@@ -16,7 +16,7 @@ def toast_pars():
 
     html = requests.get(URL, headers=headers)
 
-    soup = bs(html.text, 'html.parser')
+    soup = Bs(html.text, 'html.parser')
     res = soup.find('span', id='Label1')
 
     return res

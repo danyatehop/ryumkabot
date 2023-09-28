@@ -42,7 +42,6 @@ def other(message):
 
     butt_cytata = types.KeyboardButton('Поразить своей мудростью🐺')
     butt_humor = types.KeyboardButton('Ебануть анекдот, порадовать пацанов😆')
-    # butt_sponk = types.KeyboardButton('Отшлёпать бота по заднице ✋🍑')
     butt_toast = types.KeyboardButton('Бахнем?!🍻')
     butt_main = types.KeyboardButton('На главную👑')
 
